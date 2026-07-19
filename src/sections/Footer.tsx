@@ -44,7 +44,7 @@ export default function Footer() {
                 <a href="#" aria-label="Web" className="flex h-10 w-10 items-center justify-center rounded-full border border-[#f6f1e7]/15 transition-colors hover:border-crimson hover:text-crimson">
                   <Globe2 className="h-4 w-4" />
                 </a>
-                <a href="#" aria-label="Email" className="flex h-10 w-10 items-center justify-center rounded-full border border-[#f6f1e7]/15 transition-colors hover:border-crimson hover:text-crimson">
+                <a href="mailto:admin@socialist-tch.org" aria-label="Email" className="flex h-10 w-10 items-center justify-center rounded-full border border-[#f6f1e7]/15 transition-colors hover:border-crimson hover:text-crimson">
                   <Mail className="h-4 w-4" />
                 </a>
               </div>
@@ -54,9 +54,17 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-[#f6f1e7]/10 pt-6 text-xs text-[#f6f1e7]/40 md:flex-row md:items-center md:justify-between">
           <span>© {new Date().getFullYear()} Socialist AI — a community project for the commons.</span>
-          <span className="font-mono-alt uppercase tracking-[0.18em]">
-            Open source · Open weights · Open world ★
-          </span>
+          <div className="flex flex-wrap items-center gap-4">
+            <a href="/impressum.html" className="transition-colors hover:text-crimson">
+              Impressum
+            </a>
+            <a href="/termsandconditions.html" className="transition-colors hover:text-crimson">
+              Terms & Conditions
+            </a>
+            <span className="font-mono-alt uppercase tracking-[0.18em]">
+              Open source · Open weights · Open world ★
+            </span>
+          </div>
         </div>
       </div>
     </footer>
